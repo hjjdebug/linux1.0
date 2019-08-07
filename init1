@@ -1,0 +1,23 @@
+file tools/zSystem
+target remote localhost:1234
+set print pretty
+b start_kernel
+#b sys_fork
+#b copy_mem
+#b schedule
+#b get_free_page
+#b sys_setup
+#b bread
+#b sched_init
+#b mount_root
+#b read_super
+#b getblk
+#b sys_open
+#b open_namei
+#b find_entry
+#b dup
+#b write
+#b sys_write
+#b calibrate_delay
+b chr_dev_init
+c
